@@ -1,0 +1,27 @@
+import java.util.*;
+class palindrome
+{
+    public static int pali(int n)
+    {
+        int sum=0,t=n;
+        while(n!=0)
+        {
+            sum=sum*10+n%10;
+            n=n/10;
+        }
+        if(sum==t)
+        {
+            return 2;
+        }
+        else
+        {
+            return 1;
+        }
+    }
+    public static void main(String arg[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        System.out.print(pali(a));
+    }
+}
