@@ -1,0 +1,35 @@
+import java.util.*;
+class pali
+{
+    public static boolean pali(int n)
+    {
+        int r=0,t=n;
+        while(n!=0)
+        {
+            r=r*10+n%10;
+            n=n/10;
+        }
+        if(r==t)
+        {
+            return true;
+        }
+        else 
+        {
+            return false;
+        }
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a,b;
+        a=sc.nextInt();
+        b=sc.nextInt();
+        for(int i=a;i<b;i++)
+        {
+            if(pali(i))
+            {
+                System.out.format("%d ",i);
+            }
+        }
+    }
+}
