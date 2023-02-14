@@ -1,0 +1,14 @@
+import java.util.*;
+class ci
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int p,r,t;
+        p=sc.nextInt();
+        r=sc.nextInt();
+        t=sc.nextInt();
+        double ci=Math.pow((1+r/100.0),t)*p;
+        System.out.format("%.2f",ci);
+    }
+}
