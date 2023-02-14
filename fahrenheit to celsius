@@ -1,0 +1,13 @@
+import java.util.*;
+class fc
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n;
+        float fc;
+        n=sc.nextInt();
+        fc=(float)((n-32)*5)/9;
+        System.out.format("%.2f",fc);
+    }
+}
