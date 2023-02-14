@@ -1,0 +1,13 @@
+import java.util.*;
+class cf
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a;
+        float cf;
+        a=sc.nextInt();
+        cf=(float)((a*1.8)+32);
+        System.out.format("%.2f",cf);
+    }
+}
